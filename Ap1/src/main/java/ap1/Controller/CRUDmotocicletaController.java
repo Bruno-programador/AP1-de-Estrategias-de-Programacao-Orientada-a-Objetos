@@ -19,14 +19,14 @@ import ap1.Classes.Motocicleta;
 public class CRUDmotocicletaController implements Initializable {
 
     @FXML
-    private VBox telaMotocicleta;
+    public VBox telaMotocicleta;
     
     @FXML
-    private TextField motocicletaID;
+    public TextField motocicletaID;
     @FXML
-    private TextField motocicletaModelo;
+    public TextField motocicletaModelo;
     @FXML
-    private TextField motocicletaPreco;
+    public TextField motocicletaPreco;
     
     private Motocicleta motocicleta = new Motocicleta();
 

@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
 package ap1.Controller;
 
@@ -22,17 +22,17 @@ import javafx.scene.control.ListView;
 public class HistoricoController implements Initializable {
     
     @FXML
-    private ListView<Vendas> historicoLista;
+    public ListView<Vendas> historicoLista;
     @FXML
-    private Label hisCliente;
+    public Label hisCliente;
     @FXML
-    private Label hisMotocicleta;
+    public Label hisMotocicleta;
     @FXML
-    private Label hisParcelas;
+    public Label hisParcelas;
     @FXML
-    private Label hisPreco;
+    public Label hisPreco;
     @FXML
-    private Label hisPrecoParcela;
+    public Label hisPrecoParcela;
     
     private static ObservableList<Vendas> observableList;
     

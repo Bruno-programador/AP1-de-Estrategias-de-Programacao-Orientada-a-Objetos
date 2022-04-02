@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ */
 package ap1.Controller;
 
 
@@ -18,13 +22,13 @@ import javafx.stage.Stage;
 public class TelaPrincipalController implements Initializable {
     
     @FXML
-    private VBox principalInfo;
+    public VBox principalInfo;
     @FXML
-    private VBox janelaprincipal;
+    public VBox janelaprincipal;
 
     @FXML
     public void showCRUDcliente() throws IOException {
-        FXMLLoader loader = new FXMLLoader(TelaPrincipalController.class.getResource("/ap1/CRUDcliente.fxml"));
+        FXMLLoader loader = new FXMLLoader(TelaPrincipalController.class.getResource("/ap1/fxml/CRUDcliente.fxml"));
         
         Scene scene = new Scene(loader.load());
         Stage stageCliente = new Stage();
@@ -39,7 +43,7 @@ public class TelaPrincipalController implements Initializable {
     
     @FXML
     public void showCRUDmotocicleta() throws IOException {
-        FXMLLoader loader = new FXMLLoader(TelaPrincipalController.class.getResource("/ap1/CRUDmotocicleta.fxml"));
+        FXMLLoader loader = new FXMLLoader(TelaPrincipalController.class.getResource("/ap1/fxml/CRUDmotocicleta.fxml"));
         
         Scene scene = new Scene(loader.load());
         Stage stageMotocicleta = new Stage();
@@ -54,19 +58,19 @@ public class TelaPrincipalController implements Initializable {
     
     @FXML
     public void showRegCliente() throws IOException {
-        VBox loader = (VBox) FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/RegCliente.fxml"));
+        VBox loader = (VBox) FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/fxml/RegCliente.fxml"));
         principalInfo.getChildren().setAll(loader);
     }
     
     @FXML
     public void showRegMotocicleta() throws IOException {
-        VBox loader = (VBox) FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/RegMotocicleta.fxml"));
+        VBox loader = (VBox) FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/fxml/RegMotocicleta.fxml"));
         principalInfo.getChildren().setAll(loader);
     }
     
     @FXML
     public void showVender() throws IOException {
-        FXMLLoader loader = new FXMLLoader(TelaPrincipalController.class.getResource("/ap1/Vender.fxml"));
+        FXMLLoader loader = new FXMLLoader(TelaPrincipalController.class.getResource("/ap1/fxml/Vender.fxml"));
         
         Scene scene = new Scene(loader.load());
         Stage stageVender = new Stage();
@@ -81,22 +85,22 @@ public class TelaPrincipalController implements Initializable {
     
     @FXML
     public void ShowHistorico() throws IOException {
-        VBox loader = (VBox) FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/Historico.fxml"));
+        VBox loader = (VBox) FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/fxml/Historico.fxml"));
         principalInfo.getChildren().setAll(loader);
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
-            FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/RegCliente.fxml"));
+            FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/fxml/RegCliente.fxml"));
         } catch (IOException ex) {
         }
         try {
-            FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/RegMotocicleta.fxml"));
+            FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/fxml/RegMotocicleta.fxml"));
         } catch (IOException ex) {
         }
         try {
-            FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/Historico.fxml"));
+            FXMLLoader.load(TelaPrincipalController.class.getResource("/ap1/fxml/Historico.fxml"));
         } catch (IOException ex) {
         }
     }

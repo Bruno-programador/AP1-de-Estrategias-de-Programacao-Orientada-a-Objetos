@@ -1,8 +1,12 @@
-module com.mycompany.ap1_2 {
+module ap1 {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.base;
+    requires javafx.base;
+    requires javafx.graphics;
 
-    opens com.mycompany.ap1_2 to javafx.fxml;
+    opens ap1 to javafx.fxml;
     exports ap1;
+    exports ap1.Classes;
+    exports ap1.Controller;
+
 }

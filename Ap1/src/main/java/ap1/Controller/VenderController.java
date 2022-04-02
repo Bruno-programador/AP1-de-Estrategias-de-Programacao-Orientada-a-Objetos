@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
 package ap1.Controller;
 
@@ -29,18 +29,18 @@ import javafx.stage.Stage;
 public class VenderController implements Initializable {
 
     @FXML
-    private VBox telaVender;
+    public VBox telaVender;
     
     @FXML
-    private ChoiceBox<Cliente> vendaCliente;
+    public ChoiceBox<Cliente> vendaCliente;
     @FXML
-    private ChoiceBox<Motocicleta> vendaMotocicleta;
+    public ChoiceBox<Motocicleta> vendaMotocicleta;
     @FXML
-    private ChoiceBox<String> vendaParcelas;
+    public ChoiceBox<String> vendaParcelas;
     @FXML
-    private Label vendaPreco;
+    public Label vendaPreco;
     @FXML
-    private Label vendaPrecoParcela;
+    public Label vendaPrecoParcela;
     
     private Vendas venda = new Vendas();
 

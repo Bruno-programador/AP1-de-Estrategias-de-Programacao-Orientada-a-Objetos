@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
 package ap1.Controller;
 
@@ -27,13 +27,13 @@ public class RegClienteController implements Initializable {
      */
     
     @FXML
-    private ListView<Cliente> regClienteList;
+    public ListView<Cliente> regClienteList;
     @FXML
-    private Label regClienteId;
+    public Label regClienteId;
     @FXML
-    private Label regClienteNome;
+    public Label regClienteNome;
     @FXML
-    private Label regClienteCPF;
+    public Label regClienteCPF;
     
     private static ObservableList<Cliente> observableList;
     

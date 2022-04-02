@@ -19,14 +19,14 @@ import ap1.Classes.Cliente;
 public class CRUDclienteController implements Initializable {
 
     @FXML
-    private VBox telaCliente;
+    public VBox telaCliente;
     
     @FXML
-    private TextField clienteID;
+    public TextField clienteID;
     @FXML
-    private TextField clienteNome;
+    public TextField clienteNome;
     @FXML
-    private TextField clienteCPF;
+    public TextField clienteCPF;
     
     private Cliente cliente = new Cliente();
 

@@ -11,8 +11,8 @@ package ap1.Classes;
 public class Vendas {
     
     private String id;
-    private Cliente cliente;
-    private Motocicleta motocicleta;
+    private ap1.Classes.Cliente cliente;
+    private ap1.Classes.Motocicleta motocicleta;
     private String parcelas;
     private double valorParcelas;
     
@@ -24,19 +24,19 @@ public class Vendas {
         this.id = id;
     }
 
-    public Cliente getCliente() {
+    public ap1.Classes.Cliente getCliente() {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente(ap1.Classes.Cliente cliente) {
         this.cliente = cliente;
     }
 
-    public Motocicleta getMotocicleta() {
+    public ap1.Classes.Motocicleta getMotocicleta() {
         return motocicleta;
     }
 
-    public void setMotocicleta(Motocicleta motocicleta) {
+    public void setMotocicleta(ap1.Classes.Motocicleta motocicleta) {
         this.motocicleta = motocicleta;
     }
 

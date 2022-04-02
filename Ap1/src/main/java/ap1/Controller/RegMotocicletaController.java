@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
 package ap1.Controller;
 
@@ -27,13 +27,13 @@ public class RegMotocicletaController implements Initializable {
      */
     
     @FXML
-    private ListView<Motocicleta> regMotocicletaList;
+    public ListView<Motocicleta> regMotocicletaList;
     @FXML
-    private Label regMotocicletaId;
+    public Label regMotocicletaId;
     @FXML
-    private Label regMotocicletaModelo;
+    public Label regMotocicletaModelo;
     @FXML
-    private Label regMotocicletaPreco;
+    public Label regMotocicletaPreco;
     
     private static ObservableList<Motocicleta> observableList;
     
